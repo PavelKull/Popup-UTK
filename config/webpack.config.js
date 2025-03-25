@@ -10,6 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(projectRoot, 'dist'),
         filename: 'bundle.js',
+        publicPath: '/Popup-UTK/',
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],

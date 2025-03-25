@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 552px;
+    width: 42.8vw; // 552
+    max-width: 552px;
     border-radius: 30px;
     background-color: white;
     padding: 20px;
@@ -13,7 +14,8 @@
     border-radius: 30px;
 
     @media (max-width: 768px) {
-        width: 453px;
+        max-width: 453px;
+        width: 59vw;
         padding: 24px;
         padding: 32px;
     }
