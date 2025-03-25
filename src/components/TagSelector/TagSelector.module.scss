@@ -3,9 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media (max-width: 768px) {
-        flex-direction: row;
-    }
+
     @media (max-width: 320px) {
         flex-direction: column;
         align-items: flex-start;
@@ -16,12 +14,10 @@
     display: flex;
     flex-direction: row;
     gap: 12px;
+    flex-wrap: wrap;
 
     @media (max-width: 768px) {
         gap: 8px;
-    }
-    @media (max-width: 581px) {
-        flex-wrap: wrap;
     }
 
     @media (max-width: 320px) {
@@ -31,10 +27,14 @@
 
 .tagSelectorTitle {
     padding-right: 35px;
-    // padding-bottom: 17px;
+
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0%;
+
+    @media (max-width: 1040px) {
+        flex-wrap: wrap;
+    }
 
     @media (max-width: 320px) {
         padding-bottom: 16px;
