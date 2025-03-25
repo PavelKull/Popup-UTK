@@ -1,0 +1,12 @@
+.popupWrapper {
+    align-items: center;
+    background: var(--primary-gradient);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.popupOpen {
+    background: white;
+}

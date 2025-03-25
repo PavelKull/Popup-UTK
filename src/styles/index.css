@@ -1,0 +1,15 @@
+:root {
+    --primary-color: rgba(234, 0, 41, 1);
+    --secondary-color: rgba(245, 58, 49, 1);
+    --disabled-color: rgba(190, 197, 204, 1);
+
+    --primary-gradient: linear-gradient(50deg, #ff5e56, #dc3131),
+        linear-gradient(255.35deg, #dc3131 0.83%, rgba(255, 79, 79, 0) 108.93%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+}

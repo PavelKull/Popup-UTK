@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Lab Grotesque';
+    src: local('Lab Grotesque'),
+        url('../assets/fonts/LabGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lab Grotesque';
+    src: local('Lab Grotesque Bold'),
+        url('../assets/fonts/LabGrotesque-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+:root {
+    --font-primary: 'Lab Grotesque', sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+}

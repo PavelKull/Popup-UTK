@@ -1,0 +1,27 @@
+.textButton {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin-bottom: 16px;
+
+    &:hover {
+        color: var(--secondary-color);
+    }
+
+    &:active {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 17px;
+    }
+
+    @media (max-width: 320px) {
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,38 @@
+.tagSelector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+        flex-direction: row;
+    }
+    @media (max-width: 320px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.tagContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    @media (max-width: 768px) {
+        gap: 8px;
+    }
+    @media (max-width: 320px) {
+        gap: 8px;
+    }
+}
+
+.tagSelectorTitle {
+    padding-right: 35px;
+    // padding-bottom: 17px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+    @media (max-width: 320px) {
+        padding-bottom: 16px;
+    }
+}

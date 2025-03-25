@@ -1,0 +1,122 @@
+.mainButton {
+    width: 100%;
+    font-weight: 500;
+    min-height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+
+    &.primary {
+        color: white;
+        background: none;
+        border: 1px solid rgba(255, 255, 255, 1);
+        gap: 10px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+
+        &.small {
+            width: 158px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 16px;
+            padding: 12px 24px;
+        }
+
+        &.big {
+            font-size: 16px;
+            line-height: 24px;
+            width: 194px;
+            height: 56px;
+            padding: 16px 32px;
+        }
+
+        &:not(:disabled) {
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                background: white;
+                color: black;
+            }
+        }
+    }
+    &.secondary {
+        color: white;
+        background: var(--primary-gradient);
+        box-shadow: 0px 0px 24px 0px rgba(234, 0, 41, 0.33);
+
+        &.small {
+            width: 288px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        &.big {
+            width: 280px;
+            height: 56px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &:not(:disabled) {
+            cursor: pointer;
+            &:hover,
+            &:active {
+                background: var(--primary-color);
+            }
+        }
+        &:disabled {
+            background: var(--disabled-color);
+            color: white;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mainButton.secondary {
+        &.big {
+            height: 56px;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 30px;
+        }
+    }
+
+    .mainButton.primary {
+        &.big {
+            width: 194px;
+            height: 56px;
+            font-size: 16px;
+            line-height: 24px;
+            gap: 10px;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .mainButton.primary {
+        &.big {
+            width: 149px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 16px;
+            gap: 10px;
+            padding: 0;
+        }
+    }
+
+    .mainButton.secondary {
+        &.big {
+            width: 149px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 16px;
+            gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.inputContainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 72px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 320px) {
+        margin-bottom: 8px;
+    }
+}
+
+.inputTitle {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+.errorText {
+    color: var(--primary-color);
+    display: none;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 12px;
+}
+
+.mainInput {
+    border: 1px solid rgba(223, 227, 230, 1);
+    border-radius: 3px;
+    border-width: 1px;
+    height: 40px;
+    padding-left: 10px;
+    top: 32px;
+    width: 100%;
+
+    &:hover {
+        border: 1px solid rgba(0, 0, 0, 1);
+    }
+}
+
+.mainIpnput:disabled {
+    background: white;
+    border: 1px solid #808080;
+    color: #808080;
+    cursor: not-allowed;
+}
+
+.mainIpnput:focus {
+    border: 1px solid rgba(223, 227, 230, 1);
+    outline: none;
+}
+.error {
+    border: 1px solid var(--primary-color);
+}
