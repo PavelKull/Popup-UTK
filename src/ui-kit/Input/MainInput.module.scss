@@ -47,14 +47,14 @@
     }
 }
 
-.mainIpnput:disabled {
+.mainInput:disabled {
     background: white;
     border: 1px solid #808080;
     color: #808080;
     cursor: not-allowed;
 }
 
-.mainIpnput:focus {
+.mainInput:focus {
     border: 1px solid rgba(223, 227, 230, 1);
     outline: none;
 }
