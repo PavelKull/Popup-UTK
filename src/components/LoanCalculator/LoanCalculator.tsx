@@ -59,10 +59,10 @@ const LoanCalculator: FC<Props> = ({ handleClose }) => {
         result: null,
     });
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 320);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
 
     useEffect(() => {
-        const handleResize = () => setIsMobile(window.innerWidth <= 320);
+        const handleResize = () => setIsMobile(window.innerWidth <= 600);
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
